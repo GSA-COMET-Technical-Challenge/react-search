@@ -1,11 +1,23 @@
-import React, { useState } from 'react';
+import axios from 'axios';
+import React, { useState, useEffect } from 'react';
 import Scroll from './Scroll';
 import SearchList from './SearchList';
 
-function Search({ details }) {
+function Search() {
 
   const [searchField, setSearchField] = useState("");
   const [searchShow, setSearchShow] = useState(false);
+  const [details, setDetails] = useState([]);
+
+  const getAirports = async () => {
+    await axios.get('./assets/data/initialDetails.json').then((res) => {
+      setDetails(res.data.data)
+    })
+  }
+
+  //useEffect(() => {
+  //  console.log(getAirports())
+  //}, [])
 
   const filteredairports = details.filter(
     airport => {
@@ -27,6 +39,7 @@ function Search({ details }) {
   );
 
   const handleChange = e => {
+    getAirports()
     setSearchField(e.target.value);
     if(e.target.value===""){
       setSearchShow(false);
