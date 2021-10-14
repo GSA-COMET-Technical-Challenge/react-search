@@ -1,0 +1,42 @@
+{"data": [
+  {
+    "id": 1,
+    "airport": "Huntsville International 1",
+    "imgPath": "/assets/img/airport.png",
+    "shortcode": "HSV",
+    "city": "Huntsville",
+    "state": "AL"
+},
+{
+  "id": 2,
+  "airport": "Huntsville International 2",
+  "imgPath": "/assets/img/airport.png",
+  "shortcode": "HSV",
+  "city": "Huntsville",
+  "state": "AL"
+},
+{
+  "id": 3,
+  "airport": "Huntsville International 3",
+  "imgPath": "/assets/img/airport.png",
+  "shortcode": "HSV",
+  "city": "Huntsville",
+  "state": "AL"
+},
+{
+  "id": 4,
+  "airport": "Huntsville International 4",
+  "imgPath": "/assets/img/airport.png",
+  "shortcode": "HSV",
+  "city": "Huntsville",
+  "state": "AL"
+},
+{
+  "id": 5,
+  "airport": "Huntsville International 5",
+  "imgPath": "/assets/img/airport.png",
+  "shortcode": "HSV",
+  "city": "Huntsville",
+  "state": "AL"
+}
+]}
