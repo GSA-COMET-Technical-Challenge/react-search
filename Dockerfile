@@ -4,7 +4,11 @@ WORKDIR /src
 
 ADD . /src
 
-RUN npm install -g npm@7.24.2
+#RUN npm install -g npm@7.24.2
 RUN npm install
+RUN npm run build
+RUN yarn global add serve
 
-CMD [ "npm", "start" ]
+EXPOSE 3000
+
+CMD [ "serve", "-s", "build" ]
